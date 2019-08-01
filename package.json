@@ -1,0 +1,25 @@
+{
+  "name": "node-dingtalk-latest",
+  "version": "0.1.0",
+  "description": "node sdk for dingtalk",
+  "main": "lib/dingtalk.js",
+  "scripts": {
+    "lint": "eslint --ext js",
+    "test": "npx mocha test/**/*.test.js",
+    "cov": "nyc npm run test"
+  },
+  "dependencies": {
+    "axios": "^0.19.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^5.15.2",
+    "mocha": "^4.1.0",
+    "nyc": "^14.1.1"
+  },
+  "keywords": [
+    "dingtalk"
+  ],
+  "author": "Ryoma",
+  "license": "ISC"
+}
