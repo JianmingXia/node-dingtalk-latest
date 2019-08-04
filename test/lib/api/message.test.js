@@ -127,7 +127,7 @@ describe('lib/api/message.test.js', () => {
 
         await dingtalk.message.recallMessage({
           agent_id: config.agentId,
-          msg_task_id: 0,
+          msg_task_id: 1,
         });
       } catch (e) {
         flag = false;
