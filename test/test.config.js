@@ -7,6 +7,8 @@ module.exports = {
   agentId: '',
   // 本人 userID
   userId: '',
+  // 本人 unionId
+  unionId: '',
   // 本人 所在部门 ID
   departmentId: '',
 };

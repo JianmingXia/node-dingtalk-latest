@@ -60,5 +60,49 @@ await dingtalk.message.sendMessage({
 
 工作通知消息撤回
 
+### User
+
+#### getDeptUserIds
+
+> GET /user/getDeptMember
+
+获取部门用户 userid 列表
+
+#### getDeptUserSimples
+
+> /user/simplelist
+
+获取部门部分用户基本信息
+
+#### getDeptAllUserSimples
+
+> /user/simplelist
+
+获取部门所有用户基本信息，基于 **/user/simplelist** 接口封装
+
+#### getDeptUsers
+
+> /user/listbypage
+
+获取部门部分用户详情
+
+#### getDeptAllUsers
+
+> /user/listbypage
+
+获取部门所有用户信息，基于 **/user/listbypage** 接口封装
+
+#### getUser
+
+> /user/get
+
+获取用户详情
+
+#### getUserIdByUnionId
+
+> /user/getUseridByUnionid
+
+根据 unionid 获取 userid
+
 ## 注意
 - 测试时，请在 **test/test.config.js** 填上自己的配置

@@ -132,7 +132,7 @@ describe('lib/api/message.test.js', () => {
       } catch (e) {
         flag = false;
 
-        expect(e.code).eq(C.ERROR_CODE.INVALID_PARAM);
+        expect(e.code).eq(C.ERROR_CODE.PARAM_ERROR);
       }
 
       expect(flag).eq(false);
