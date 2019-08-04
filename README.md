@@ -104,5 +104,31 @@ await dingtalk.message.sendMessage({
 
 根据 unionid 获取 userid
 
+#### getOrgUserCount
+
+> /user/get_org_user_count
+
+获取企业员工数
+
+### Department
+
+#### getSubDepts
+
+> /department/list
+
+获取子部门列表——支持迭代获取子部门
+
+#### getSubDeptIds
+
+> /department/list_ids
+
+获取子部门 ID  列表——不支持迭代获取子部门 ID 列表
+
+### getDepartment
+
+> /department/get
+
+获取部门详情
+
 ## 注意
 - 测试时，请在 **test/test.config.js** 填上自己的配置
