@@ -1,10 +1,14 @@
 {
   "name": "node-dingtalk-latest",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "node sdk for dingtalk",
   "main": "lib/dingtalk.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JianmingXia/node-dingtalk-latest.git"
+  },
   "scripts": {
-    "lint": "eslint --ext js",
+    "lint": "eslint --ext .js lib/",
     "test": "npx mocha test/**/*.test.js",
     "cov": "nyc npm run test"
   },
@@ -12,8 +16,11 @@
     "axios": "^0.19.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^8.1.0",
+    "@commitlint/config-conventional": "^8.1.0",
     "chai": "^4.2.0",
     "eslint": "^5.15.2",
+    "husky": "^3.0.2",
     "mocha": "^4.1.0",
     "nyc": "^14.1.1"
   },
