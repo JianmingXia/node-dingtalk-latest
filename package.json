@@ -1,6 +1,6 @@
 {
   "name": "node-dingtalk-latest",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "node sdk for dingtalk",
   "main": "lib/dingtalk.js",
   "repository": {

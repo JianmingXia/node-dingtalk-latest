@@ -11,4 +11,6 @@ module.exports = {
   unionId: '',
   // 本人 所在部门 ID
   departmentId: '',
+  // 根部门 id
+  rootDepartmentId: 1,
 };

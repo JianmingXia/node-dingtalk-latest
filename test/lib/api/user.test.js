@@ -159,4 +159,36 @@ describe('lib/api/user.test.js', () => {
       expect(flag).eq(true);
     });
   });
+
+  describe('获取企业员工数', () => {
+    it('获取企业员工数：包含未激活', async () => {
+      let flag = true;
+      try {
+        const dingtalk = new DingTalk(config);
+
+        const count = await dingtalk.user.getOrgUserCount();
+
+        expect(count).gt(0);
+      } catch (e) {
+        flag = false;
+      }
+
+      expect(flag).eq(true);
+    });
+
+    it('获取企业员工数：不包含未激活', async () => {
+      let flag = true;
+      try {
+        const dingtalk = new DingTalk(config);
+
+        const count = await dingtalk.user.getOrgUserCount(1);
+
+        expect(count).gt(0);
+      } catch (e) {
+        flag = false;
+      }
+
+      expect(flag).eq(true);
+    });
+  });
 });
