@@ -11,7 +11,9 @@
 const DingTalk = require('node-dingtalk-latest');
 const dingtalk = new DingTalk({
   appKey: '',
-  appSecret: ''
+  appSecret: '',
+  loginAppId: '',
+  loginAppSecret: ''
 });
 
 await dingtalk.message.sendMessage({
@@ -31,13 +33,27 @@ await dingtalk.message.sendMessage({
 
 ## API
 
-> 目前支持的 API，会持续更新，也欢迎大家提需求
+> 目前支持的 API，主要以我目前使用的为主，欢迎大家提需求
 
 ### Client
 #### getAccessToken
 > GET /gettoken
 
 获取 AccessToken, 并在有效期内自动缓存
+
+### Auth
+
+#### getQRGotoUrl
+
+获取内嵌二维码的 goto url
+
+#### getUserInfoByCode
+
+> /sns/getuserinfo_bycode
+
+通过 code 获取用户信息
+
+Note：扫码获取 tmpAuthCode 后，需要手动构造一个链接，该链接会 302 到重定向地址，此时的 code 才可使用
 
 ### Message
 #### sendMessage

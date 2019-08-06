@@ -1,6 +1,6 @@
 {
   "name": "node-dingtalk-latest",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "node sdk for dingtalk",
   "main": "lib/dingtalk.js",
   "repository": {
@@ -9,7 +9,7 @@
   },
   "scripts": {
     "lint": "eslint --ext .js lib/",
-    "test": "npx mocha test/**/*.test.js",
+    "test": "npx mocha \"test/**/*.test.js\"",
     "cov": "nyc npm run test"
   },
   "dependencies": {
