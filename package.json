@@ -19,9 +19,9 @@
     "@commitlint/cli": "^8.1.0",
     "@commitlint/config-conventional": "^8.1.0",
     "chai": "^4.2.0",
-    "eslint": "^5.15.2",
+    "eslint": "^6.3.0",
     "husky": "^3.0.2",
-    "mocha": "^4.1.0",
+    "mocha": "^6.2.0",
     "nyc": "^14.1.1"
   },
   "keywords": [
